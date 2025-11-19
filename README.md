@@ -1,3 +1,15 @@
+## Tài nguyên
+| Bài giảng                                                                                                 | Branch   |
+|-----------------------------------------------------------------------------------------------------------|----------|
+| [1. Cách compile và run Java project bằng command line (7p)](https://www.youtube.com/watch?v=vtliaLTh3NY) | [main](https://github.com/anaconda875/command-line) |
+
+- [Basic Java/Spring Boot](https://www.youtube.com/watch?v=vtliaLTh3NY&list=PLPmPxNDeXFx2REYgIyPFR5zdxy3oUqmZx)
+
+## Nội dung
+1. `javac`: Trình biên dịch Java, chuyển mã nguồn `.java` thành `bytecode` (chạy đa nền tảng).
+2. `java`: Trình chạy Java, thực thi `bytecode` trên Java Virtual Machine (JVM).
+3. `classpath`: Đường dẫn đến `bytecode` và các thư viện cần thiết để chạy chương trình.
+
 ## Cách compile và run chương trình bằng command line (Windows)
 
 1. Clone repository này về máy
@@ -11,12 +23,9 @@ javac -d out (Get-ChildItem -Recurse -Filter *.java).FullName
 ```
 4. Chạy chương trình bằng lệnh:
 ```powershell
+# -cp out: Chỉ định classpath là thư mục out, nơi chứa bytecode đã biên dịch 
 java -cp out com.example.Main
 ```
-
-## Video và danh sách phát
-- [Cách compile và run Java project bằng command line](https://www.youtube.com/watch?v=vtliaLTh3NY)
-- [Basic Java/Spring Boot](https://www.youtube.com/watch?v=vtliaLTh3NY&list=PLPmPxNDeXFx2REYgIyPFR5zdxy3oUqmZx)
 
 ## Liên hệ hỗ trợ và báo lỗi
 - [SpringBoot Guru](https://www.facebook.com/profile.php?id=100093210926413)
