@@ -5,6 +5,7 @@
 | [2. Cách tích hợp thư viện vào Java project bằng command line (7p)](https://github.com/anaconda875/command-line/tree/external-lib) | [external-lib](https://github.com/anaconda875/command-line/tree/external-lib) |                                       |
 
 - [Basic Java/Spring Boot](https://www.youtube.com/watch?v=vtliaLTh3NY&list=PLPmPxNDeXFx2REYgIyPFR5zdxy3oUqmZx)
+- [Slides](./Basic%20Java.pptx)
 
 ## Nội dung
 1. `javac`: Trình biên dịch Java, chuyển mã nguồn `.java` thành `bytecode` (chạy đa nền tảng).
