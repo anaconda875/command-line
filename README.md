@@ -1,8 +1,8 @@
 ## Tài nguyên
 | Bài giảng                                                                                                        | Branch                                                                        |
 |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [1. Cách compile và run Java project bằng command line (hiện tại)](https://www.youtube.com/watch?v=vtliaLTh3NY)  | [main](https://github.com/anaconda875/command-line)                           |
-| [2. Cách tích hợp thư viện vào Java project bằng command line (7p)](https://www.youtube.com/watch?v=UjJFCZpffZQ) | [external-lib](https://github.com/anaconda875/command-line/tree/external-lib) |                                       |
+| [1. Cách compile và run Java project bằng command line (7p)](https://www.youtube.com/watch?v=vtliaLTh3NY)  | [main](https://github.com/anaconda875/command-line)                           |
+| [2. Cách tích hợp thư viện vào Java project bằng command line (hiện tại)](https://www.youtube.com/watch?v=UjJFCZpffZQ) | [external-lib](https://github.com/anaconda875/command-line/tree/external-lib) |                                       |
 
 - [Basic Java/Spring Boot](https://www.youtube.com/watch?v=vtliaLTh3NY&list=PLPmPxNDeXFx2REYgIyPFR5zdxy3oUqmZx)
 - [Slides](./Basic%20Java.pptx)
