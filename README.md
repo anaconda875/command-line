@@ -15,7 +15,7 @@
 ## Cách compile và run chương trình bằng command line (Windows)
 
 1. Clone repository này về máy
-2. Mở terminal và điều hướng đến thư mục chứa mã nguồn
+2. Mở terminal và điều hướng đến thư mục chứa mã nguồn:
 ```powershell
 cd command-line
 ```
