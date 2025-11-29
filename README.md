@@ -17,8 +17,8 @@
 
 ## Cách compile và run chương trình có gắn thư viện ngoài bằng command line (Windows)
 
-1. Clone repository này về máy:
-2. Mở terminal và điều hướng đến thư mục chứa mã nguồn
+1. Clone repository này về máy
+2. Mở terminal và điều hướng đến thư mục chứa mã nguồn:
 ```powershell
 cd command-line
 ```
@@ -28,7 +28,7 @@ git checkout external-lib
 ```
 4. Compile mã nguồn thành bytecode bằng lệnh:
 ```powershell
-# -cp out: Chỉ định classpath (nơi chứa thư viện)
+# -cp lib\commons-lang3-3.18.0.jar": Chỉ định classpath (nơi chứa thư viện)
 javac -cp "lib\commons-lang3-3.18.0.jar" -d out (Get-ChildItem -Recurse -Filter *.java).FullName
 
 # hoặc đơn giản hơn
