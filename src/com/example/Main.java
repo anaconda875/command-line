@@ -1,10 +1,16 @@
 package com.example;
 
-import org.springframework.boot.SpringApplication;
+import com.example.service.AppService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan
 public class Main {
 
   public static void main(String[] args) {
-    System.out.println(SpringApplication.isAllStringEmpty(""));
+    ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
+    AppService appService = context.getBean(AppService.class);
+    System.out.println(appService.name());
   }
 }

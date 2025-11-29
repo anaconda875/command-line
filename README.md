@@ -15,36 +15,45 @@
 2. `java`: Trình chạy Java, thực thi `bytecode` trên Java Virtual Machine (JVM).
 3. `classpath`: Đường dẫn đến `bytecode` và các thư viện cần thiết để chạy chương trình.
 4. Thư viện ngoài: Các gói jar chứa bytecode đã được biên dịch sẵn, giúp tái sử dụng mã nguồn và chức năng.
+5. jar: **J**ava **Ar**chive.
+   Định dạng đóng gói các file class, resource và metadata của ứng dụng Java.
+   JDK cung cấp tiện ích đi kèm `jar`, dùng để tạo/manage jar file
+
 
 ## Cách compile và run chương trình có gắn thư viện ngoài bằng command line (Windows)
 
-1. Clone repository này về máy:
-2. Mở terminal và điều hướng đến thư mục chứa mã nguồn
+1. Clone repository này về máy
+2. Mở terminal và điều hướng đến thư mục chứa mã nguồn:
 
 ```powershell
 cd command-line
 ```
 
-3. Checkout branch `conflict`
+3. Checkout branch `spring`
 
 ```powershell
-git checkout conflict
+git checkout spring
 ```
 
 4. Compile mã nguồn thành bytecode bằng lệnh:
 
 ```powershell
-# -cp out: Chỉ định classpath (nơi chứa thư viện)
-javac -cp "lib\commons-lang3-3.18.0.jar" -d out (Get-ChildItem -Recurse -Filter *.java).FullName
+# -cp lib\*: Chỉ định classpath (nơi chứa thư viện)
+javac -cp "lib\*" -d out (Get-ChildItem -Recurse -Filter *.java).FullName
 ```
 
-5. Chạy chương trình bằng lệnh:
+5. Tạo jar file từ bytecode đã compile:
 
 ```powershell
-# -cp "out;lib\*": Chỉ định classpath là thư mục out và lib
-# nơi chứa bytecode đã compile và thư viện ngoài
-# lỗi sẽ xuất hiện do có xung đột giữa các phiên bản thư viện
-java -cp "out;lib\*" com.example.Main
+jar cvfm commandline.jar META-INF\MANIFEST.MF -C out .
+```
+
+6. Chạy chương trình bằng lệnh:
+
+```powershell
+# -cp "commandline.jar;lib\*": Chỉ định classpath
+# nơi chứa jar đã đóng gói và thư viện ngoài
+java -cp "commandline.jar;lib\*" com.example.Main
 ```
 
 ## Liên hệ hỗ trợ và báo lỗi
